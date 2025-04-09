@@ -4,7 +4,6 @@ function RepositoryCard({ repo }) {
 
 
     const MiniDetails = ({ icoLabel, value }) => {
-        console.log(icoLabel)
         return (
             <div className='flex gap-x-1 text-sm items-center'>
                 <img src={icoLabel} alt='icon'/>

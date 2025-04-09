@@ -70,7 +70,6 @@ function Header({ setUsernameParam }) {
             }
             finally {
                 setLoading(false)
-
             }
         }
         fetchMatchingUser(inputValue)
@@ -85,7 +84,9 @@ function Header({ setUsernameParam }) {
                 '--bg-sm': `url(${headerBGsm})`
             }}>
             <div className='w-[420px] min-w-[160px] relative m-8'>
-                <img src={searchSVG} alt='' className='bg-no-repeat absolute top-3.5 left-2 h-5.5' />
+                <div  className='bg-no-repeat absolute top-3.5 left-2 h-5.5 w-[24px]' >
+                    <img src={searchSVG} alt='search' className='bg-no-repeat h-full w-full' />
+                </div>
                 <input
                     className='w-full max-w-[420px] p-3 pl-9 bg-slate-800 rounded-lg shadow-md focus:outline-0 focus:ring-2 focus:ring-blue-500  focus:outline-slate-600 font-medium'
                     placeholder='username'

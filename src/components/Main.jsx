@@ -70,7 +70,7 @@ function Main({ usernameParam }) {
                                 </div>
                                 : <img  // Show user display picture if it exists, otherwise default to hardcoded file
                                     className='w-full h-full object-cover rounded-[10px]'
-                                    src={userData?.avatar ?? "/assets/dp.webp"} alt="profile" />
+                                    src={userData?.avatar ?? "/GithubAPI/assets/dp.webp"} alt="profile" />
                         }
 
                     </div>
