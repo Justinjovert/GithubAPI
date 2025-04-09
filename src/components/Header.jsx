@@ -90,7 +90,6 @@ function Header({ setUsernameParam }) {
                 <input
                     className='w-full max-w-[420px] p-3 pl-9 bg-slate-800 rounded-lg shadow-md focus:outline-0 focus:ring-2 focus:ring-blue-500  focus:outline-slate-600 font-medium'
                     placeholder='username'
-                    style={{ backgroundImage: `url(${searchSVG})` }}
                     id='searchUsername'
                     onChange={debouncedRef}
                     onFocus={() => setDisplaySearch(true)}
